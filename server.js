@@ -8,7 +8,7 @@ Mercado.setProvider(provider);
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 var ProductModel = require('./product');
-mongoose.connect("mongodb://localhost:27017/mercado_dapp");
+mongoose.connect("mongodb://localhost:27017/mercado_dapp" , { useNewUrlParser: true });
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
@@ -27,7 +27,7 @@ app.listen(3000, function() {
 });
 
 app.get('/', function(req, res) {
-  res.send("Hello there!");
+  res.send("Hello Ethereum!");
 });
 
 app.get('/products', function(req, res) {

@@ -6,5 +6,4 @@ module.exports = function(callback) {
   amt_3 = web3.toWei(3, 'ether');
   amt_half = web3.toWei(0.5, 'ether');
   amt_tenth = web3.toWei(0.1, 'ether');
-
 }

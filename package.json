@@ -3,9 +3,8 @@
   "version": "0.0.2",
   "description": "Frontend example using truffle v3",
   "scripts": {
-    "lint": "eslint ./",
-    "build": "webpack",
-    "dev": "webpack-dev-server"
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Douglas von Kohorn",
   "license": "MIT",
@@ -30,12 +29,29 @@
     "html-webpack-plugin": "^2.28.0",
     "ipfs-api": "18.1.1",
     "json-loader": "^0.5.4",
-    "mongoose": "^5.2.5",
+    "mongoose": "^5.2.8",
     "nodemon": "^1.11.0",
     "style-loader": "^0.13.1",
     "truffle-contract": "^1.1.11",
     "web3": "^0.20.0",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.3.0"
-  }
+  },
+  "dependencies": {
+    "ajv": "^6.5.2",
+    "lite-server": "2.3.0"
+  },
+  "main": "product.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Viv-Galinari/descentralized-markeplace.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Viv-Galinari/descentralized-markeplace/issues"
+  },
+  "homepage": "https://github.com/Viv-Galinari/descentralized-markeplace#readme"
 }

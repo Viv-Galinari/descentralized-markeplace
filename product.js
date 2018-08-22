@@ -1,3 +1,6 @@
+/* Using MogoDB and mongoose as offchain solution
+ * to query products
+ */
 var mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;

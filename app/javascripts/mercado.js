@@ -1,28 +1,33 @@
-import "../stylesheets/app.css";
+/*
+ Working with Webpack@3.0 and 
+ Metacoin Contract boiler plate  
+*/
 
-// Import libraries we need
+// Import stylesheets, Web3 and Truffle-contract libraries 
+import "../stylesheets/app.css";
 import { default as Web3} from 'web3';
 import { default as contract } from 'truffle-contract'
 
+// Require IPFS API to hosts product images and descriptions
 const ipfsAPI = require('ipfs-api');
 const ipfs = ipfsAPI({host: '127.0.0.1', port: '5001', protocol: 'http'});
 
 // Import our contract artifacts and turn them into usable abstractions.
 import mercado_artifacts from '../../build/contracts/Mercado.json'
 
-// MetaCoin is our usable abstraction, which we'll use through the code below.
+// Mercado is our usable abstraction, which we'll use through the code below.
 var Mercado = contract(mercado_artifacts);
 
 var reader;
 
-// const categories = ["Art","Books","Cameras","Cell Phones & Accessories","Clothing","Computers & Tablets","Gift Cards & Coupons","Musical Instruments & Gear","Pet Supplies","Pottery & Glass","Sporting Goods","Tickets","Toys & Hobbies","Video Games"];
+// Product categories filter
 const categories = ["Art","Antiques","Books","Business, Industry & Science","Cameras","Cars & Motorbikes","Clothing","Handmade","Home & Garden","Eletronics & Computers","Mobile Phones","Musical Instruments","Outdoors", "Tickets", "Video Games & Accessories"];
 
 window.App = {
   start: function() {
     var self = this;
 
-    // Bootstrap the MetaCoin abstraction for Use.
+    // Bootstrap the Mercado abstraction for Use.
     Mercado.setProvider(web3.currentProvider);
 
     if($("#product-details").length > 0) {
@@ -139,11 +144,8 @@ function renderProductDetails(productId) {
   })
 }
 
+// IPFS image and description upload  
 function saveProduct(product) {
-  // 1. Upload image to IPFS and get the hash
-  // 2. Add description to IPFS and get the hash
-  // 3. Pass the 2 hashes to addProductToStore
-  
   var imageId;
   var descId;
   saveImageOnIpfs(reader).then(function(id) {
@@ -190,17 +192,6 @@ function saveTextBlobOnIpfs(blob) {
 }
 
 function renderStore() {
-  // Get the product count 
-  // Loop through and fetch all products by id
-  /*var instance;
-  return Mercado.deployed().then(function(f) {
-    instance = f;
-    return instance.productIndex.call();
-  }).then(function(count) {
-    for(var i=1; i<= count; i++) {
-      renderProduct(instance, i);
-    }
-  });*/
 
   categories.forEach(function(value) {
     $("#categories").append("<div><a class='category-link' href='#'>" + value + "</a></div>");
@@ -223,22 +214,6 @@ function renderStore() {
     }
   });
 }
-
-/*function renderProduct(instance, index) {
-  instance.getProduct.call(index).then(function(f) {
-    let node = $("<div/>");
-    node.addClass("col-sm-3 text-center col-margin-bottom-1 product");
-    node.append("<img src='http://localhost:8080/ipfs/" + f[3] + "' />");
-    node.append("<div class='title'>" + f[1] + "</div>");
-    node.append("<div> Price: " + displayPrice(f[6]) + "</div>");
-    node.append("<a href='product.html?id=" + f[0] + "'>Details</div>");
-    if (f[8] === '0x0000000000000000000000000000000000000000') {
-      $("#product-list").append(node);
-    } else {
-      $("#product-purchased").append(node);
-    }
-  });
-}*/
 
 function renderProduct(product) {
   console.log(product);

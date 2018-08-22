@@ -3,39 +3,37 @@
 <head>
   <title>Mercado Decentralized Marketplace</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   <script src="./mercado.js"></script>
 </head>
 <body>
   <div class="row">
-    <div class="container-fluid navbar navbar-light main">
+    <div class="container-fluid navbar main">
       <a href="/" class="navbar-brand">Mercado Decentralized Marketplace</a>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a href="add-product.html" class="nav-link btn list ">Add New Item</a></li>
-        </ul>
-      </div>
+  
+      <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="add-product.html">Add New Item</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <div id="categories">
+                  </div>  
+              </ul>
+            </li>
+          </ul>
+      </div>      
     </div>
-    <div class="container-fluid">
-      <div class="col-sm-2 side-bar">
-        <h2>Categories</h2>
-        <div id="categories">
-        </div>
-      </div>
-      <div class="col-sm-9">
-        <div class="row">
-          <h2 class="text-center">Products To Buy</h2>
-          <div class="row" id="product-list">
-          </div>
-        </div>
-        <hr>
-        <div class="row">
-          <h2 class="text-center">Products purchased </h2>
-          <div class="row" id="product-purchased">
-          </div>
-        </div>
-        <hr>
+    
+    <div class="row" id="product-list">
+    </div>
+
       </div>
     </div>
   </div>
