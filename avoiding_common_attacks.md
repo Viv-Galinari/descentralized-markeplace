@@ -1,7 +1,5 @@
 ## Avoiding Common Attacks
 
-- This project has been tested using Unit test provided by Truffle suite to ensure logic bugs were detected at run-time.
-
  - Used Require Statements to ensure only the right users should have access to certain functions.
 
  - Included Arbiter address and multisig contract to prevent buyers and sellers from abusing their privilegues in the system.

@@ -119,7 +119,7 @@
             },
             "typeName": {
               "id": 552,
-              "name": "address",
+              "name": "",
               "nodeType": "ElementaryTypeName",
               "src": "50:7:2",
               "typeDescriptions": {
@@ -1375,6 +1375,12 @@
     "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {
+    "4": {
+      "events": {},
+      "links": {},
+      "address": "0xdfc37ba5f323e1fdd94205acb29d608fc5fda178",
+      "transactionHash": "0xb6c4db0c44bf97becab16909483da9287c78e7d23b0e61cb22b2750b1afedd57"
+    },
     "1533118088297": {
       "events": {},
       "links": {},
@@ -1470,8 +1476,20 @@
       "links": {},
       "address": "0x0f9e0db82d640257f75db2fe1c9ce59bc114cbd5",
       "transactionHash": "0x158cfcc800816836de01873be8285adf4f96b3572b128c26039aa36a83b0b7aa"
+    },
+    "1535197461326": {
+      "events": {},
+      "links": {},
+      "address": "0xbff083af8f88d2dbd162e96ac1cae8dc49aa3c7b",
+      "transactionHash": "0x98b3b586e288c5f8d55ec000e8d21dbe59e5ddfc669095a9c7a0d63ddc15d1cb"
+    },
+    "1535379678383": {
+      "events": {},
+      "links": {},
+      "address": "0x11c771155981161aa13c2b781ec0f342dc83cf6a",
+      "transactionHash": "0xc9123c1a111bdb29160c2eb074a6562e2e96f12491de6c6d0dd09667b21ee1c8"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-22T16:00:09.574Z"
+  "updatedAt": "2018-08-27T14:45:49.121Z"
 }

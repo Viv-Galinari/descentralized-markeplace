@@ -1,8 +1,3 @@
-// 
-Run a local development server 
-// clean up other comments
-add screenshots as DEMO
-
 # Mercado Descentralized Markeplace
 
 ## Overview
@@ -20,11 +15,12 @@ add screenshots as DEMO
 
 ## Running
 
-Link to the project: [http://10.4.4.183:8005]() 
+Link to the project: [http://192.168.1.105:8005]
 
+Or clone this repo and run `npm run dev` to serve dapp.
 
 ## Build with
-[Truffle Webpack Box](https://truffleframework.com/boxes/webpack) boilerplate on Webpack@3.0.
+[Truffle Webpack Box](https://truffleframework.com/boxes/webpack) boilerplate on Webpack@3.0 to build, compile and test.
 
 [IPFS](http://ipfs.io) for descentralized storage solution and IPFS Javascript library.
 
@@ -37,7 +33,9 @@ Link to the project: [http://10.4.4.183:8005]()
 
 ## Other commands
 
-`ganache-cli` - starts a private blockchain with ten test accounts on port 8585
+
+
+`ganache-cli` - starts a local and private blockchain with ten test accounts on port 8585
 
 `ipfs daemons` - starts IPFS server on port 8080 [or 4001 and 5001]
 
@@ -45,7 +43,7 @@ Link to the project: [http://10.4.4.183:8005]()
 
 `node server.js` - to start NodeJS server at port 3000 (node_modules/.bin/nodemon server.js)
 
-`npm run dev` - to serve dapp frontend on external link <http://10.4.4.183:8005> or local host <http://localhost:8085>.
+
 
 `mongod` - starts mongoDB
 
@@ -53,15 +51,6 @@ Link to the project: [http://10.4.4.183:8005]()
 
 `truffle migrate` - compile and migrate contracsts
 
-
-#### Clone this repo
-
-
-`npm install` - Make sure testrpc is running on its default port. 
-
-`npm run start` - Starts the development server
-
-`truffle test` - Run the test suite
 
 ## Coding Style
 This repo uses JS Standard and Solidity.
