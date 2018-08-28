@@ -15,9 +15,16 @@
 
 ## Running
 
-Link to the project: [http://192.168.1.105:8005]
+Link to the project: Mercado International (https://www.mercado.international)
 
-Or clone this repo and run `npm run dev` to serve dapp.
+Or clone this repo and run `npm run dev` to serve dapp with lite-server.
+
+-  Running on Ropsten testnet (or Rinkeby). 
+Proposed gas price: 11 Wei, according to Etherscan
+(https://etherscan.io/gastracker)
+
+
+
 
 ## Build with
 [Truffle Webpack Box](https://truffleframework.com/boxes/webpack) boilerplate on Webpack@3.0 to build, compile and test.
