@@ -57,6 +57,8 @@ Link to the project: Mercado International (http://www.mercado.international)
 
 [NodeJS Server]() that connects the frontend with the database.
 
+[Ropsten]() and [Rinkeby]() testnet.
+
 
 ## Coding Style
 This repo uses JS Standard and Solidity.
