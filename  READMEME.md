@@ -15,15 +15,13 @@
 
 ## Running
 
-Link to the project: Mercado International (https://www.mercado.international)
+Link to the project: Mercado International (http://www.mercado.international)
 
-Or clone this repo and run `npm run dev` to serve dapp with lite-server.
-
--  Running on Ropsten testnet (or Rinkeby). 
+-  Running on ROPSTEN testnet. 
 Proposed gas price: 11 Wei, according to Etherscan
 (https://etherscan.io/gastracker)
 
-
+Or clone this repo and run `npm run dev` to serve dapp with lite-server.
 
 
 ## Build with
