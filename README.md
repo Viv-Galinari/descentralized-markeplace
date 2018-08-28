@@ -13,16 +13,37 @@
 - And uses Lite-Server library to serve static files.
 
 
-## Running
+## Running the project deployed on the web
 
 Link to the project: Mercado International (http://www.mercado.international)
+- Requires Metamask chrome extension to complete transactions.
 
 -  Running on ROPSTEN testnet. Proposed gas price: 11 Wei, according to Etherscan
 (https://etherscan.io/gastracker)
+- Request Ropsten Ether Faucet for testing purposes: (https://faucet.metamask.io/) or (https://faucet.ropsten.be/)
 
 -  Deployed on Rinkeby testnet, however with limited access.
 
-Or clone this repo and run `npm run dev` to serve dapp with lite-server.
+
+## Running a local host
+
+- Clone this repo and on the root folder
+
+`ganache-cli` - starts a local and private blockchain with ten test accounts on port 8585
+
+`ipfs daemons` - starts IPFS server on port 8080 [or 4001 and 5001]
+
+`npm run dev` - to serve dapp with lite-server.  
+
+`node server.js` - to start NodeJS server at port 3000 (node_modules/.bin/nodemon server.js)
+
+`mongod` - starts mongoDB
+
+`mongo` - query database
+
+`truffle compile` - compile and migrate contracsts
+
+`truffle migrate` - compile and migrate contracsts
 
 
 ## Build with
@@ -35,27 +56,6 @@ Or clone this repo and run `npm run dev` to serve dapp with lite-server.
 [MongoDB]() as offchain solution for product database.
 
 [NodeJS Server]() that connects the frontend with the database.
-
-
-## Other commands
-
-
-
-`ganache-cli` - starts a local and private blockchain with ten test accounts on port 8585
-
-`ipfs daemons` - starts IPFS server on port 8080 [or 4001 and 5001]
-
-`localhost:5001/webui` - for IPFS Web User Inteface
-
-`node server.js` - to start NodeJS server at port 3000 (node_modules/.bin/nodemon server.js)
-
-
-
-`mongod` - starts mongoDB
-
-`mongo` - query database
-
-`truffle migrate` - compile and migrate contracsts
 
 
 ## Coding Style
