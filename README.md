@@ -17,9 +17,10 @@
 
 Link to the project: Mercado International (http://www.mercado.international)
 
--  Running on ROPSTEN testnet. 
-Proposed gas price: 11 Wei, according to Etherscan
+-  Running on ROPSTEN testnet. Proposed gas price: 11 Wei, according to Etherscan
 (https://etherscan.io/gastracker)
+
+-  Deployed on Rinkeby testnet, however with limited access.
 
 Or clone this repo and run `npm run dev` to serve dapp with lite-server.
 
