@@ -25,7 +25,7 @@ Link to the project: Mercado International (http://www.mercado.international)
 -  Deployed on Rinkeby testnet, however with limited access.
 
 
-## Running a local host
+## Running on localhost
 
 - Clone this repo and on the root folder
 
@@ -44,6 +44,8 @@ Link to the project: Mercado International (http://www.mercado.international)
 `truffle compile` - compile and migrate contracsts
 
 `truffle migrate` - compile and migrate contracsts
+
+`truffle test` -  test contracts
 
 
 ## Build with
