@@ -31,7 +31,7 @@ Link to the project: Mercado International (http://www.mercado.international)
 
 `npm i` - to install dependencies
 
-`npm install -g ganache-cli` - to download Ganache-cli/ 
+`npm install -g ganache-cli` - to download Ganache-cli\ 
 `ganache-cli` - starts a local and private blockchain with ten test accounts on port 8585
 
 `cd go-ipfs` - to go to IPFS directory within the project 
