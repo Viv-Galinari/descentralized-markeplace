@@ -27,16 +27,25 @@ Link to the project: Mercado International (http://www.mercado.international)
 
 ## Running on localhost
 
-- Clone this repo and on the root folder
+- Clone this repo and on the root folder (and on different terminal tabs)
+
+`npm i` - to install dependencies
+
+`npm install -g ganache-cli` - to download Ganache-cli 
 
 `ganache-cli` - starts a local and private blockchain with ten test accounts on port 8585
 
-`ipfs daemons` - starts IPFS server on port 8080 [or 4001 and 5001]
+`cd go-ipfs` - to go to IPFS directory within the project 
+
+`./ipfs daemon` - to starts IPFS server on port 8080 [or 4001 and 5001]
 
 `npm run dev` - to serve dapp with lite-server.  
 
-`node server.js` - to start NodeJS server at port 3000 (node_modules/.bin/nodemon server.js)
+`node server.js` - to start NodeJS server which will communicate with MongoDB 
 
+`brew install mongodb` - to install mongo database (offchain solution)
+
+(usefull commands)
 `mongod` - starts mongoDB
 
 `mongo` - query database
