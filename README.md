@@ -35,10 +35,11 @@ Link to the project: Mercado International (http://www.mercado.international)
 
 `cd go-ipfs` to go to IPFS directory within the project AND `./ipfs daemon` to start IPFS server on port 8080 [or 4001 and 5001] - make sure to be on 'go-ipfs' folder.
 
-`npm run dev` on root directory to serve dapp locally with lite-server.  
+`npm run dev` on the root directory to serve dapp locally with lite-server.  
 
 `node server.js` to start NodeJS server which will communicate with MongoDB 
 
+(You might have to install Mongo database if you can't see the products in store)
 `brew install mongodb` to install mongo database (offchain solution) and other possible usefull commands: `mongod` to start mongoDB and `mongo` to query database if needed.
 
 `truffle compile` - compile and migrate contracsts
