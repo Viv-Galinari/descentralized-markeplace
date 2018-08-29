@@ -32,28 +32,23 @@ Link to the project: Mercado International (http://www.mercado.international)
 `npm i` - to install dependencies
 
 `npm install -g ganache-cli` - to download Ganache-cli 
-
 `ganache-cli` - starts a local and private blockchain with ten test accounts on port 8585
 
 `cd go-ipfs` - to go to IPFS directory within the project 
-
 `./ipfs daemon` - to starts IPFS server on port 8080 [or 4001 and 5001]
 
+`cd ..` - to return to root directory
 `npm run dev` - to serve dapp with lite-server.  
 
 `node server.js` - to start NodeJS server which will communicate with MongoDB 
 
 `brew install mongodb` - to install mongo database (offchain solution)
-
 (usefull commands)
 `mongod` - starts mongoDB
-
 `mongo` - query database
 
 `truffle compile` - compile and migrate contracsts
-
 `truffle migrate` - compile and migrate contracsts
-
 `truffle test` -  test contracts
 
 
