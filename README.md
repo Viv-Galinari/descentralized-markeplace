@@ -35,8 +35,6 @@ Link to the project: Mercado International (http://www.mercado.international)
 
 `cd go-ipfs` to go to IPFS directory within the project AND `./ipfs daemon` to start IPFS server on port 8080 [or 4001 and 5001] - make sure to be on 'go-ipfs' folder.
 
-`cd ..` to return to root directory  
-
 `npm run dev` on root directory to serve dapp locally with lite-server.  
 
 `node server.js` to start NodeJS server which will communicate with MongoDB 
