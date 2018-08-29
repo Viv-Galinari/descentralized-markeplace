@@ -33,7 +33,7 @@ Link to the project: Mercado International (http://www.mercado.international)
 
 `npm install -g ganache-cli` to download Ganache-cli AND `ganache-cli` to start a local and private blockchain with ten test accounts on port 8585
 
-`cd go-ipfs` to go to IPFS directory within the project AND `./ipfs daemon` to start IPFS server on port 8080 [or 4001 and 5001]
+`cd go-ipfs` to go to IPFS directory within the project AND `./ipfs daemon` to start IPFS server on port 8080 [or 4001 and 5001] - make sure to be on 'go-ipfs' folder.
 
 `cd ..` to return to root directory AND `npm run dev` to serve dapp locally with lite-server.  
 
