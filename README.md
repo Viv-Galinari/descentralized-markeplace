@@ -2,8 +2,15 @@
 
 ## Overview
 
- Mercado is a decentralized trading platform running on the Ethereum blockchain.
-
+ Mercado is a decentralized trading platform running on the Ethereum blockchain I developed as a final project for the 2018 ConsenSys Academy Developers 
+ Program, in which I graduated with mark 89/100. 
+ 
+ This market is similar to Ebay where buyers and sellers trade goods, however, it runs exclusively on smart contracts to operate. Sellers might add 
+ products to the Blockchain using their private keys and buyers might purchase the goods using crypto-currencies. 
+ 
+ Mercado uses MultiSig Smart contactors a decentralised fraud protector intermediary between buyers and sellers ensuring all transactions are safe and 
+ genuine. 
+ 
 - Anyone can list an item. 
 - All items can be filtered by category.
 - Product images and descritption are stored on IPFS blockchain.
@@ -11,7 +18,6 @@
 - Goods can be purchased via MetaMask, paying in Ether.
 - Mercado uses MultiSig Smart contract as a descentralized fraud protector intermediary between buyers and sellers.
 - And uses Lite-Server library to serve static files.
-
 
 ## Running the project deployed on the web
 
@@ -45,7 +51,6 @@ Link to the project: Mercado International (http://www.mercado.international)
 `truffle compile` - compile and migrate contracsts
 `truffle migrate` - compile and migrate contracsts
 `truffle test` -  test contracts
-
 
 ## Build with
 [Truffle Webpack Box](https://truffleframework.com/boxes/webpack) boilerplate on Webpack@3.0 to build, compile and test.
